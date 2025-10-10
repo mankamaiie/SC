@@ -1,0 +1,9 @@
+~ambient_drone = Buffer.read(s, thisProcess.nowExecutingPath.dirname++"/drone.wav") ;
+/*
+This line of code loads my drone sample,
+which will be looped later.
+*/
+{ PlayBuf.ar( 2, ~ambient_drone, loop:1 ) }.play ;
+/*
+This line of code is playing the loaded buffer(my sample) in Stereo (2) and it loops forever (1 is forever and 0 means no loop)
+*/
