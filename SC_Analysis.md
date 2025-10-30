@@ -96,14 +96,13 @@ s.waitForBoot({
 **Steps:**
 1. Mixes 8 sine waves with small random pitch and phase changes.  
 2. applies an envelope (`Env.perc`) to control fade-in and fade-out.  
-3. Multiplies the mixed tone by another slow, wobbly signal to create variation.  
 4. Applies `PitchShift` to slightly change pitch over time.  
 5. Adds 8 sawtooth waves (`LFSaw`) with their own envelope for brightness.  
 6. Uses feedback (`LocalIn` and `LocalOut`) and short delays (`DelayN`) for depth.  
 7. Compresses and filters the sound with `Compander` and `HPF`.  
 8. Sends the output to the main speakers (`Out.ar(0, ...)`).
 
-**Result:** A complex tone with slow movement and mild echo.
+**Result:** A complex tone...
 
 
 
@@ -139,7 +138,7 @@ SynthDef(\impul, {
 5. Uses an envelope (`Env.perc`) to fade out.  
 6. Sends the result to the speakers.
 
-**Result:** Short percussive clicks that echo and spread out.
+**Result:** Short percussive clicks that echo 
 
 
 
@@ -172,7 +171,7 @@ SynthDef(\f, {
 	}).add;
 ```
 
-**Purpose:** Produces a softer tone layer with subtle pitch changes and feedback.
+**Purpose:** Produces a softer tone layer with some pitch changes and feedback.
 
 **Steps:**
 1. Mixes 8 sine waves at slightly different frequencies.  
