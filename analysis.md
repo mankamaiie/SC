@@ -249,7 +249,7 @@ s.record("home", 0, 2); //RECORD
 
 	};
 ```
-### Engine & Prep
+###
 - Runs inside `s.waitForBoot` → SynthDefs `.add` → `s.sync`.  
 - Recording started with `s.record("home", 0, 2)` (stereo).
 
@@ -280,7 +280,6 @@ s.record("home", 0, 2); //RECORD
 
 - **Recording** – `s.record("home", 0, 2)` captures stereo from bus 0 via the server’s `Recorder`.  
 - **Output** – All SynthDefs send audio to `Out.ar(0, ...)`, ensuring they’re included in the recording.
-
 
 ## 
 
