@@ -22,7 +22,7 @@ It has additive layers, impulse clouds, saw washes, granular pitch shifting, and
 
 ## SynthDefs: Signal Flow & Role
 
-### 1. `\farEnough` — Additive Bed + Saw Wash + Granular Shifts + Feedback
+### 1. `\farEnough` - Additive Bed + Saw Wash + Granular Shifts + Feedback
 
 ``` 
 s.waitForBoot({
@@ -87,7 +87,7 @@ s.waitForBoot({
 
 **Role**: A broad, evolving pad.
 
-### 2. `\impul` — Diffused Impulse Clouds with Noisy Gate
+### 2. `\impul` - Diffused Impulse Clouds with Noisy Gate
 
 ```
 SynthDef(\impul, {
@@ -118,7 +118,7 @@ SynthDef(\impul, {
 **Role**: texture.
 
 
-### 3. `\f` — Soft Additive Layer with Pitch Drift and Feedback
+### 3. `\f` -  Soft Additive Layer with Pitch Drift and Feedback
 
 ```
 SynthDef(\f, {
@@ -157,7 +157,7 @@ SynthDef(\f, {
 
 ---
 
-### 4. `\bur` — Percussive Sine Bursts with Dynamic Shaping
+### 4. `\bur` -  Percussive Sine Bursts with Dynamic Shaping
 
 ```
 
@@ -182,7 +182,7 @@ SynthDef(\bur, {
 ```
 
 
-1. **Carrier** – Single `SinOsc`.  
+1. **Carrier** - Single `SinOsc`.  
 2. **Short hit + long window** – `Env.perc` gated by `Impulse.kr(gate)` plus a long `Env` window.  
 3. **Dynamics control** – `Compander` → amplitude scaling → stereo duplicate → `Out`.
 
